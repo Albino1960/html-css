@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <style>
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            background-color: yellow;
+        }
+      body {
+        font: normal 1em Arial, Helvetica, sans-serif;
+      }
+      a {
+        font-weight: bold;
+        text-decoration: none;
+        color: red;
+      }
+      a:visited{
+        color: darkred;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+      .especial:hover {
+        color: white;
+        background-color: black;
+        text-decoration: none;
+      }
+      .especial::before {
+        content:">>";
+        font-weight: lighter;
+      }
+      .especial::after{
+        content:"<<";
+        font-weight: lighter;
+      }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando um link</h1>
+    <p>
+        Para aprender HTML5 e CSS3, assece o
+        <a href="https://gustavoguanabara.github.io">
+            GitHub do Guanabara
+        </a>        
+    </p>
+    <p>
+        Se quiser conhecer mais sobre padrões, visite o site do <a href="https://www.w3c.br"> Escritório do W3C no Brasil</a>
+    </p>
+    <p>
+        Para acompanhar os cursos, assece o <a href="https://www.youtube.com/cursoemvideo/" class="especial">canal do Curso em Vídeo
+        </a>
+    </p>
+    <hr>
+    <h1>Conteúdo especial</h1>
+    <div>
+        Passe o mouse aqui
+        <p>SURPRESSAAAA !</p>
+    </div>
+    <P>Veja o conteúdo aparecendo</P>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com fontes externas</title>
+    <style>
+        @font-face {
+            font-family:"Love" ;
+            /* Fonte baixada de dafont.com */
+            src: url("fontes/love larry ttf.ttf") format("truetype");
+
+            /*tipos de format:
+
+                opentype (otf)
+                truetype (ttf)
+                embedded-opentype
+                truetype-aat
+            */
+            font-weight: normal;
+            font-style: normal;
+               }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1{
+            font-family: "Love", 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Fontes externas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quasi atque ipsum nulla. Odit voluptatum excepturi libero, illo fuga ipsum iste, nihil obcaecati enim tempora eius dolore. Saepe, amet perferendis?</p>
+    
+</body>
+</html>
